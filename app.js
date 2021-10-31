@@ -91,3 +91,17 @@ console.log(nameWithInitials);
 var button = document.getElementById("process");
 //create click
 button.addEventListener("click", createInitials, false);
+
+
+//0 додаванння
+function calculator() {
+	var a = Number(document.getElementById("number-a").value);
+	var b = Number(document.getElementById("number-b").value);
+	var res = a + b;
+	document.getElementById('result').innerHTML = res;
+}
+
+var button = document.getElementById("calc");
+//create click
+button.addEventListener("click", calculator, false);
+
